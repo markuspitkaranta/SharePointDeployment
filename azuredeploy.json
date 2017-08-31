@@ -14,7 +14,7 @@
       "metadata": {
         "description": "The region to deploy the resources into"
       },
-      "defaultValue":"[resourceGroup().location]"
+      "defaultValue": "[resourceGroup().location]"
     },
     "virtualNetworkName": {
       "type": "string",
@@ -162,7 +162,7 @@
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-three-vm"
+      "defaultValue": "https://github.com/markuspitkaranta/SharePointDeployment"
     },
     "spPublicIPNewOrExisting": {
       "type": "string",
