@@ -845,7 +845,7 @@
           "location": {
             "value": "[parameters('location')]"
           },
-          "spConfigureModulesURL": {
+          "spConfgureModulesURL": {
             "value": "[variables('spConfigureModulesURL')]"
           },
           "spConfigurationFunction": {
