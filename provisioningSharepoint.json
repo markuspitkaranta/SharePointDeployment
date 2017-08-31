@@ -115,9 +115,9 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "[concat(parameters('_artifactsLocation'), '/', variables('ScriptFolder'), '/', variables('ScriptFileName'), parameters('_artifactsLocationSasToken'))]"
+            "https://raw.githubusercontent.com/markuspitkaranta/SharePointDeployment/master/ps/Fix-PSModulePath.ps1"
           ],
-          "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File ', variables('scriptFolder'), '/', variables('scriptFileName'), ' ', variables('scriptParameters'))]"
+          "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File Fix-PSModulePath.ps1')]"
         }
       }
     },
@@ -126,7 +126,8 @@
       "name": "[concat(parameters('spVMName'),'/ConfigureSPServer')]",
       "apiVersion": "2015-06-15",
       "dependsOn": [
-        "[concat('Microsoft.Compute/virtualMachines/', parameters('spVMName'))]"
+        "[concat('Microsoft.Compute/virtualMachines/', parameters('spVMName'))]",
+        "[concat('Microsoft.Compute/virtualMachines/', parameters('spVMName'), '/extensions/PreRequisites')]"
       ],
       "location": "[parameters('location')]",
       "properties": {
