@@ -162,7 +162,7 @@
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
       },
-      "defaultValue": "https://github.com/markuspitkaranta/SharePointDeployment"
+      "defaultValue": "https://raw.githubusercontent.com/markuspitkaranta/SharePointDeployment/master"
     },
     "spPublicIPNewOrExisting": {
       "type": "string",
