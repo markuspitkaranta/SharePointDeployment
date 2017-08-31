@@ -801,7 +801,7 @@
           "adminPassword": {
             "value": "[parameters('adminPassword')]"
           },
-          "sqlConfgureModulesURL": {
+          "sqlconfigureModulesURL": {
             "value": "[variables('sqlConfigureModulesURL')]"
           },
           "sqlConfigurationFunction": {

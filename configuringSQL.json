@@ -14,7 +14,7 @@
     "adminPassword": {
       "type": "securestring"
     },
-    "sqlConfgureModulesURL": {
+    "sqlconfigureModulesURL": {
       "type": "string"
     },
     "sqlConfigurationFunction": {
@@ -48,7 +48,7 @@
         "typeHandlerVersion": "2.20",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "ModulesUrl": "[parameters('sqlConfgureModulesURL')]",
+          "ModulesUrl": "[parameters('sqlconfigureModulesURL')]",
           "wmfVersion": "4.0",
           "ConfigurationFunction": "[parameters('sqlConfigurationFunction')]",
           "Properties": {
